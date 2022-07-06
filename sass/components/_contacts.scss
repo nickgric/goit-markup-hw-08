@@ -10,10 +10,8 @@
     gap: 50px;
 }
 
-.contacts__thumb {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.contacts__icon {
+    @extend %align;
     margin-right: 10px;
     height: 16px;
     width: 16px;

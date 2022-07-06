@@ -27,6 +27,12 @@
   overflow: hidden;
 }
 
+.contacts__icon, .modal-form__contract-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -84,13 +90,21 @@ input {
   padding-bottom: 94px;
 }
 
-.title {
+.section_no-padding-top {
+  padding-top: 0;
+}
+
+.section__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+}
+
+.section_other-background {
+  background-color: var(--background-color-light);
 }
 
 .backdrop {
@@ -144,9 +158,8 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 8px;
-  top: 0%;
-  right: 0%;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
   border: solid var(--background-color-light);
@@ -177,6 +190,7 @@ input {
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .modal-form__input {
@@ -187,7 +201,6 @@ input {
   height: 40px;
   padding: 12px 12px 12px 42px;
   outline: none;
-  margin-bottom: 10px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form__input:hover, .modal-form__input:focus {
@@ -229,12 +242,7 @@ input {
 }
 
 .modal-form__contract-line {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .modal-form__check {
@@ -346,10 +354,7 @@ input {
   gap: 50px;
 }
 
-.contacts__thumb {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.contacts__icon {
   margin-right: 10px;
   height: 16px;
   width: 16px;
@@ -387,20 +392,72 @@ input {
   background-color: var(--bachground-color-button-hover);
 }
 
-.page-header {
+.social {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.social__link {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social__link:hover, .social__link:focus {
+  background-color: var(--color-accent);
+}
+
+.social__icon {
+  fill: var(--fill-icons);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team__social-link:hover .social__icon, .team__social-link:focus .social__icon {
+  fill: var(--color-invert);
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 8px;
+}
+
+.filter__buttons {
+  padding: 6px 22px 6px 22px;
+  background: var(--background-color-light);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.filter__buttons:hover, .filter__buttons:focus {
+  background: var(--color-accent);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  color: var(--color-invert);
+}
+
+.header__container {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ECECEC;
 }
 
-.page-header__logo {
+.header__logo {
   color: var(--color-main);
   margin-right: 93px;
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-.page-header__nav {
+.header__nav {
   margin-right: auto;
 }
 
@@ -433,7 +490,7 @@ input {
   margin-right: auto;
 }
 
-.skills__list {
+.skills {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -465,10 +522,6 @@ input {
 }
 
 .whatwedo {
-  padding-top: 0;
-}
-
-.whatwedo__list {
   display: flex;
   gap: 30px;
 }
@@ -498,10 +551,6 @@ input {
 }
 
 .team {
-  background-color: var(--background-color-light);
-}
-
-.team__list {
   display: flex;
   gap: 30px;
 }
@@ -518,7 +567,7 @@ input {
   padding-bottom: 30px;
 }
 
-.team__member {
+.team__title {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -527,7 +576,7 @@ input {
   letter-spacing: 0.03em;
 }
 
-.team__member-info {
+.team__text {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -536,34 +585,7 @@ input {
   margin-bottom: 16px;
 }
 
-.team__social {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-}
-
-.team__social-link {
-  height: 44px;
-  width: 44px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.team__social-link:hover, .team__social-link:focus {
-  background-color: var(--color-accent);
-}
-
-.team__social-icon {
-  fill: var(--fill-icons);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.team__social-link:hover .team__social-icon, .team__social-link:focus .team__social-icon {
-  fill: var(--color-invert);
-}
-
-.clients__list {
+.clients {
   display: flex;
   gap: 30px;
 }
@@ -596,32 +618,7 @@ input {
   fill: var(--color-accent);
 }
 
-.projects__filter {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-  gap: 8px;
-}
-
-.projects__filter-buttons {
-  padding: 6px 22px 6px 22px;
-  background: var(--background-color-light);
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.projects__filter-buttons:hover, .projects__filter-buttons:focus {
-  background: var(--color-accent);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  color: var(--color-invert);
-}
-
-.projects__list {
+.projects {
   display: flex;
   gap: 30px;
   justify-content: center;
@@ -635,9 +632,7 @@ input {
 .projects__link {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.projects__link:focus,
-.projects__link:hover {
+.projects__link:focus, .projects__link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -688,9 +683,7 @@ input {
   position: absolute;
   transition: bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.projects__link:focus .projects__memo-box,
-.projects__link:hover .projects__memo-box {
+.projects__link:focus .projects__memo-box, .projects__link:hover .projects__memo-box {
   bottom: 0;
 }
 
@@ -713,6 +706,7 @@ input {
 
 .address {
   margin-right: 70px;
+  flex-grow: 1;
 }
 
 .address__list {

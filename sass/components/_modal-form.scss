@@ -16,6 +16,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
 }
 
 .modal-form__input {
@@ -26,7 +27,6 @@
     height: 40px;
     padding: 12px 12px 12px 42px;
     outline: none;
-    margin-bottom: 10px;
 
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -80,12 +80,8 @@
 }
 
 .modal-form__contract-line {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
     margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .modal-form__check {
