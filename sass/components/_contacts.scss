@@ -1,13 +1,13 @@
 .contacts {
+    display: flex;
+    gap: 50px;
+    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--color-secondary);
     fill: var(--color-secondary);
-
-    display: flex;
-    gap: 50px;
 }
 
 .contacts__icon {
