@@ -1,14 +1,23 @@
 .team {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 30px;
 }
 
 .team__item {
     background: var(--color-invert);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
-    flex-basis: calc((100% - 90px) / 4);
+    width: 100%;
+    max-width: 450px;
+}
+
+.team__photo {
+    width: 100%;
 }
 
 .team__memo-box {
@@ -33,4 +42,21 @@
     letter-spacing: 0.03em;
     color: var(--color-secondary);
     margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .team {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .team__item {
+        width: 354px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .team__item {
+        width: 270px;
+    }
 }

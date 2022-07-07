@@ -6,6 +6,7 @@
 @import "./base/container";
 @import "./base/section";
 
+@import "./components/mobile-menu";
 @import "./components/backdrop";
 @import "./components/modal-window";
 @import "./components/modal-form";
@@ -24,4 +25,4 @@
 @import "./layout/clients";
 @import "./layout/projects";
 @import "./layout/footer";
-@import "./layout/contacts";
+@import "./layout/feedback";

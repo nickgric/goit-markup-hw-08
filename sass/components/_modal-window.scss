@@ -3,13 +3,17 @@
     left: 50%;
     top: 50%;
     padding: 40px;
-    transform: translate(-50%, -50%) scale(1);  
-    width: 528px;
-    height: 581px;
+    width: calc(100% - 30px);
+    max-width: 450px;
+    height: 609px;
     background: var(--background-color-modal);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translate(-50%, -50%) scale(1);
+    transition:
+        transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-window__title {
@@ -38,10 +42,26 @@
     background-color: var(--background-color-modal);
     fill: var(--color-main);
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition:
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
-    fill: var(--color-accent);
+        fill: var(--color-accent);
+    }
 }
+
+@media screen and (min-width: 768px) {
+    .modal-window {
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .modal-window {
+        width: 528px;
+        height: 581px;
+        max-width: 528px;
+    }
 }

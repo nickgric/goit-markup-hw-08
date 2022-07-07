@@ -106,7 +106,7 @@
     justify-content: center;
     align-items: center;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--color-secondary);
@@ -123,7 +123,7 @@
     }
 }
 
-.modal-form__hidden-check:checked + .modal-form__contract-label::before {
+.modal-form__hidden-check:checked+.modal-form__contract-label::before {
     border: solid 2px var(--color-accent);
     background-color: var(--color-accent);
     background-image: url(../images/modal-check.svg);
@@ -138,4 +138,18 @@
 .modal-form__button {
     margin-left: auto;
     margin-right: auto;
+}
+
+@media screen and (max-width: 341px) {
+    .modal-form__comment {
+        height: 60px;
+    }
+}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1200px) {
+    .modal-form__contract-label {
+        font-size: 14px;
+    }
 }

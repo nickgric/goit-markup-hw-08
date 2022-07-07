@@ -16,8 +16,8 @@
 
     &:hover,
     &:focus {
-    background-color: var(--color-accent);
-}
+        background-color: var(--color-accent);
+    }
 }
 
 .social__icon {
@@ -25,8 +25,8 @@
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .team__social-link:hover &,
-    .team__social-link:focus & {
-    fill: var(--color-invert);
-}
+    .social__link:hover &,
+    .social__link:focus & {
+        fill: var(--color-invert);
+    }
 }
