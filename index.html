@@ -171,9 +171,16 @@
                 <ul class="whatwedo">
                     <li class="whatwedo__item">
                         <div class="whatwedo__box">
-                            <img srcset="./images/whatwedo/whatwedo-1.jpg 1x, ./images/whatwedo/whatwedo-1@2x.jpg 2x"
-                                src="./images/whatwedo/whatwedo-1.jpg" alt="Разработка десктопного софта" width="370"
-                                height="294" />
+                            <picture>
+                                <source
+                                    srcset="./images/whatwedo/desktop-webp/whatwedo-1.webp 1x, ./images/whatwedo/desktop-webp/whatwedo-1@2x.webp 2x"
+                                    type="image/webp" media="(min-width: 1200px)" />
+                                <source
+                                    srcset="./images/whatwedo/desktop/whatwedo-1.jpg 1x, ./images/whatwedo/desktop/whatwedo-1@2x.jpg 2x"
+                                    type="image/jpeg" media="(min-width: 1200px)" />
+                                <img src="./images/whatwedo/desktop/whatwedo-1.jpg" alt="Разработка десктопного софта"
+                                    width="370" height="294" />
+                            </picture>
                             <div class="whatwedo__memo-box">
                                 <p class="whatwedo__memo">Десктопные приложения</p>
                             </div>
@@ -181,9 +188,16 @@
                     </li>
                     <li class="whatwedo__item">
                         <div class="whatwedo__box">
-                            <img srcset="./images/whatwedo/whatwedo-2.jpg 1x, ./images/whatwedo/whatwedo-2@2x.jpg 2x"
-                                src="./images/whatwedo/whatwedo-2.jpg" alt="Разработка десктопного софта" width="370"
-                                height="294" />
+                            <picture>
+                                <source
+                                    srcset="./images/whatwedo/desktop-webp/whatwedo-2.webp 1x, ./images/whatwedo/desktop-webp/whatwedo-2@2x.webp 2x"
+                                    type="image/webp" media="(min-width: 1200px)" />
+                                <source
+                                    srcset="./images/whatwedo/desktop/whatwedo-2.jpg 1x, ./images/whatwedo/desktop/whatwedo-2@2x.jpg 2x"
+                                    type="image/jpeg" media="(min-width: 1200px)" />
+                                <img src="./images/whatwedo/desktop/whatwedo-2.jpg" alt="Разработка мобильного софта"
+                                    width="370" height="294" />
+                            </picture>
                             <div class="whatwedo__memo-box">
                                 <p class="whatwedo__memo">Мобильные приложения</p>
                             </div>
@@ -191,9 +205,16 @@
                     </li>
                     <li class="whatwedo__item">
                         <div class="whatwedo__box">
-                            <img srcset="./images/whatwedo/whatwedo-3.jpg 1x, ./images/whatwedo/whatwedo-3@2x.jpg 2x"
-                                src="./images/whatwedo/whatwedo-3.jpg" alt="Разработка десктопного софта" width="370"
-                                height="294" />
+                            <picture>
+                                <source
+                                    srcset="./images/whatwedo/desktop-webp/whatwedo-3.webp 1x, ./images/whatwedo/desktop-webp/whatwedo-3@2x.webp 2x"
+                                    type="image/webp" media="(min-width: 1200px)" />
+                                <source
+                                    srcset="./images/whatwedo/desktop/whatwedo-3.jpg 1x, ./images/whatwedo/desktop/whatwedo-3@2x.jpg 2x"
+                                    type="image/jpeg" media="(min-width: 1200px)" />
+                                <img src="./images/whatwedo/desktop/whatwedo-3.jpg" alt="Разработка дизайн-решений"
+                                    width="370" height="294" />
+                            </picture>
                             <div class="whatwedo__memo-box">
                                 <p class="whatwedo__memo">Дизайнерские решения</p>
                             </div>
@@ -207,10 +228,26 @@
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="team">
                     <li class="team__item">
-                        <img class="team__photo"
-                            srcset="./images/ourteam/ourteam-1.jpg 1x, ./images/ourteam/ourteam-1@2x.jpg 2x"
-                            src="./images/ourteam/ourteam-1.jpg" alt="Улыбающийся брюнет в очках" width="270"
-                            height="260" />
+                        <picture class="team__photo">
+                            <source srcset="./images/team/desktop-webp/team-1.webp 1x,
+                                ./images/team/desktop-webp/team-1@2x.webp 2x" type="image/webp"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/team/desktop/team-1.jpg 1x,
+                                ./images/team/desktop/team-1@2x.jpg 2x" type="image/jpeg"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/team/tablet-webp/team-1.webp 1x,
+                                ./images/team/tablet-webp/team-1@2x.webp 2x" type="image/webp"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/team/tablet/team-1.jpg 1x,
+                                ./images/team/tablet/team-1@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)" />
+                            <source srcset="./images/team/mobile-webp/team-1.webp 1x,
+                                ./images/team/mobile-webp/team-1@2x.webp 2x" type="image/webp"
+                                media="(max-width: 767px)" />
+                            <source srcset="./images/team/mobile/team-1.jpg 1x,
+                                ./images/team/mobile/team-1@2x.jpg 2x" type="image/jpeg" media="(max-width: 767px)" />
+                            <img src="./images/team/mobile/team-1.jpg" alt="Фотография первого сотрудника" width="270"
+                                height="260" />
+                        </picture>
                         <div class="team__memo-box">
                             <h3 class="team__title">Игорь Демьяненко</h3>
                             <p class="team__text">Product Designer</p>
@@ -247,10 +284,26 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__photo"
-                            srcset="./images/ourteam/ourteam-2.jpg 1x, ./images/ourteam/ourteam-2@2x.jpg 2x"
-                            src="./images/ourteam/ourteam-2.jpg" alt="Улыбающийся брюнет в очках" width="270"
-                            height="260" />
+                        <picture class="team__photo">
+                            <source srcset="./images/team/desktop-webp/team-2.webp 1x,
+                                ./images/team/desktop-webp/team-2@2x.webp 2x" type="image/webp"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/team/desktop/team-2.jpg 1x,
+                                ./images/team/desktop/team-2@2x.jpg 2x" type="image/jpeg"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/team/tablet-webp/team-2.webp 1x,
+                                ./images/team/tablet-webp/team-2@2x.webp 2x" type="image/webp"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/team/tablet/team-2.jpg 1x,
+                                ./images/team/tablet/team-2@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)" />
+                            <source srcset="./images/team/mobile-webp/team-2.webp 1x,
+                                ./images/team/mobile-webp/team-2@2x.webp 2x" type="image/webp"
+                                media="(max-width: 767px)" />
+                            <source srcset="./images/team/mobile/team-2.jpg 1x,
+                                ./images/team/mobile/team-2@2x.jpg 2x" type="image/jpeg" media="(max-width: 767px)" />
+                            <img src="./images/team/mobile/team-2.jpg" alt="Фотография второго сотрудника" width="270"
+                                height="260" />
+                        </picture>
                         <div class="team__memo-box">
                             <h3 class="team__title">Ольга Репина</h3>
                             <p class="team__text">Frontend Developer</p>
@@ -287,10 +340,26 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__photo"
-                            srcset="./images/ourteam/ourteam-3.jpg 1x, ./images/ourteam/ourteam-3@2x.jpg 2x"
-                            src="./images/ourteam/ourteam-3.jpg" alt="Улыбающийся брюнет в очках" width="270"
-                            height="260" />
+                        <picture class="team__photo">
+                            <source srcset="./images/team/desktop-webp/team-3.webp 1x,
+                                ./images/team/desktop-webp/team-3@2x.webp 2x" type="image/webp"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/team/desktop/team-3.jpg 1x,
+                                ./images/team/desktop/team-3@2x.jpg 2x" type="image/jpeg"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/team/tablet-webp/team-3.webp 1x,
+                                ./images/team/tablet-webp/team-3@2x.webp 2x" type="image/webp"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/team/tablet/team-3.jpg 1x,
+                                ./images/team/tablet/team-3@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)" />
+                            <source srcset="./images/team/mobile-webp/team-3.webp 1x,
+                                ./images/team/mobile-webp/team-3@2x.webp 2x" type="image/webp"
+                                media="(max-width: 767px)" />
+                            <source srcset="./images/team/mobile/team-3.jpg 1x,
+                                ./images/team/mobile/team-3@2x.jpg 2x" type="image/jpeg" media="(max-width: 767px)" />
+                            <img src="./images/team/mobile/team-3.jpg" alt="Фотография третьего сотрудника" width="270"
+                                height="260" />
+                        </picture>
                         <div class="team__memo-box">
                             <h3 class="team__title">Николай Тарасов</h3>
                             <p class="team__text">Marketing</p>
@@ -327,10 +396,26 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__photo"
-                            srcset="./images/ourteam/ourteam-4.jpg 1x, ./images/ourteam/ourteam-4@2x.jpg 2x"
-                            src="./images/ourteam/ourteam-4.jpg" alt="Улыбающийся брюнет в очках" width="270"
-                            height="260" />
+                        <picture class="team__photo">
+                            <source srcset="./images/team/desktop-webp/team-4.webp 1x,
+                                ./images/team/desktop-webp/team-4@2x.webp 2x" type="image/webp"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/team/desktop/team-4.jpg 1x,
+                                ./images/team/desktop/team-4@2x.jpg 2x" type="image/jpeg"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/team/tablet-webp/team-4.webp 1x,
+                                ./images/team/tablet-webp/team-4@2x.webp 2x" type="image/webp"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/team/tablet/team-4.jpg 1x,
+                                ./images/team/tablet/team-4@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)" />
+                            <source srcset="./images/team/mobile-webp/team-4.webp 1x,
+                                ./images/team/mobile-webp/team-4@2x.webp 2x" type="image/webp"
+                                media="(max-width: 767px)" />
+                            <source srcset="./images/team/mobile/team-4.jpg 1x,
+                                ./images/team/mobile/team-4@2x.jpg 2x" type="image/jpeg" media="(max-width: 767px)" />
+                            <img src="./images/team/mobile/team-4.jpg" alt="Фотография четвёртого сотрудника"
+                                width="270" height="260" />
+                        </picture>
                         <div class="team__memo-box">
                             <h3 class="team__title">Михаил Ермаков</h3>
                             <p class="team__text">UI Designer</p>
