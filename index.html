@@ -105,7 +105,7 @@
                 <h1 class="hero__title">
                     Эффективные решения<br />для вашего бизнеса
                 </h1>
-                <button class="button hero__button" type="button" modal-open>
+                <button class="button hero__button" type="button" data-modal-open>
                     Заказать услугу
                 </button>
             </div>
@@ -569,7 +569,7 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop modal-hidden" modal>
+    <div class="backdrop modal-hidden" data-modal>
         <div class="modal-window">
             <p class="modal-window__title">Оставьте свои данные, мы вам перезвоним</p>
             <form class="modal-form" action="#">
@@ -602,12 +602,12 @@
                     placeholder="Введите текст"></textarea>
                 <span class="modal-form__contract-line">
                     <input class="hidden modal-form__hidden-check" required type="checkbox" name="contract" id="check">
-                    <label class="modal-form__contract-label" for="check">Соглашаюсь с подпиской и принимаю&nbsp<a
+                    <label class="modal-form__contract-label" for="check">Соглашаюсь с подпиской и принимаю&nbsp;<a
                             class="modal-form__contract-link" href="./index.html">Условия договора</a></label>
                 </span>
                 <button class="button modal-form__button" type="submit">Отправить</button>
             </form>
-            <button class="modal-window__close-button" type="button" modal-close>
+            <button class="modal-window__close-button" type="button" data-modal-close>
                 <svg width="11px" height="11px">
                     <use href="./images/sprite.svg#close-modal"></use>
                 </svg>
